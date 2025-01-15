@@ -26,8 +26,7 @@ body {
         top 69px left 156px,
         top 94px left 63px,
         top 538px left 948px,
-        top 568px left 1013px;   
-    background-repeat: no-repeat;    
+        top 568px left 1013px;       
 }
 
 .heder__title {
@@ -93,6 +92,13 @@ body {
     background: #202027;
     padding-top: 94px;
     padding-left: 119px;
+    background-image: url(img-gaim/star-7.svg), url(img-gaim/star-5.svg), url(img-gaim/star-6.svg);
+    background-repeat: no-repeat;
+    background-position:
+        top 98px right 0px,
+        top 770px left 25px,
+        top 822px left 40px;
+        
 }
 .about-games__block {
 }
