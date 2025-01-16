@@ -14,9 +14,6 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
-.desktop {
-
-}
 .heder {
     background-color: #E1FF8F;
     background-image: url(img-gaim/group-stars.svg), url(img-gaim/star-1.svg), url(img-gaim/star-2.svg), url(img-gaim/star-3.svg), url(img-gaim/star-4.svg);
@@ -61,7 +58,6 @@ body {
     font-size: 24px;
     font-weight: 600;
     cursor: pointer;
-    margin-bottom: 156px;
     border: 1px solid #202027
 }
 .heder__button:hover {
@@ -98,8 +94,6 @@ body {
         top 822px left 40px;
         
 }
-.about-games__block {
-}
 .about-games__titles {
     font-size: 64px;
     font-weight: 700;
@@ -119,13 +113,11 @@ body {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
-
+    padding-bottom: 18px;
 }
 .product-subblock {
     grid-column: span 4;
-
 }
-
 .product-game {
     height: 473px;
     width: 378px;
@@ -150,9 +142,6 @@ body {
     background: #FFFFFF;
     border-radius: 30px;
 }
-.product-game__img {
-
-}
 .product-game__number {
     padding-bottom: 16px;
 }
@@ -163,12 +152,55 @@ body {
     line-height: 39.01px;
 }
 
-
-
-
 .mini-games {
+    background: #202027;
+    padding-top: 46px;
 }
+.mini-games__titles {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    color: #ffffff;
+    padding-bottom: 72px;
+}
+.mini-games__product {
+    padding-bottom: 112px;
+}
+.mini-games__icons {
+    margin-bottom: 32px;
+}
+.mini-games__productes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.mini-games__productes2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+}
+.mini-game__descripto {
+    padding: 48px 48px 203px 48px;
+}
+.mini-game__subtitle {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+}
+.mini-game__number {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
 .footer {
+    background: #BCEC30;
 }
 .footer-text {
 }
