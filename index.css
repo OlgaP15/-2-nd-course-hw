@@ -14,8 +14,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 720px);
-  padding-right: calc(50% - 720px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .heder {
@@ -27,7 +27,6 @@ body {
 
 .heder__title {
   padding-top: 196px;
-  padding-left: 120px;
   padding-bottom: 246px;
   max-height: 358px;
   max-width: 769px;
@@ -93,7 +92,6 @@ body {
 .about-games {
   background: #202027;
   padding-top: 94px;
-  padding-left: 119px;
   background-image: url(img-gaim/star-7.svg), url(img-gaim/star-5.svg), url(img-gaim/star-6.svg);
   background-repeat: no-repeat;
   background-position: top 98px right 0px, top 770px left 25px, top 822px left 40px;
@@ -119,7 +117,11 @@ body {
 .about-gemes__product {
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(12, 4fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.product-subblock {
+  grid-column: span 4;
 }
 
 .product-game {
