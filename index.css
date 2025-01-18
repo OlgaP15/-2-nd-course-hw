@@ -33,7 +33,6 @@ body {
 }
 
 .heder__subtitle {
-  font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
   line-height: 78.02px;
@@ -70,11 +69,11 @@ body {
   transition: 0.5s;
 }
 
-.heder__scrolling {
+.scrolling {
   background: #bcec30;
 }
 
-.heder__scrolling-games {
+.scrolling-games {
   overflow: hidden;
   white-space: nowrap;
   font-family: Montserrat;
@@ -95,7 +94,7 @@ body {
     transform: translateX(-100%);
   }
 }
-.heder__imgs {
+.scrolling__imgs {
   font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
@@ -130,7 +129,7 @@ body {
   padding-bottom: 72px;
 }
 
-.about-gemes__product {
+.product {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(12, 1fr);
@@ -153,7 +152,15 @@ body {
   padding: 32px 32px 32px 36px;
 }
 
-.product-game__two {
+.product-game2__descript {
+  padding: 32px 32px 32px 36px;
+}
+
+.product-game3__descript {
+  padding: 32px 32px 32px 36px;
+}
+
+.product-game2 {
   height: 551px;
   width: 378px;
   margin-bottom: 32px;
@@ -161,7 +168,7 @@ body {
   border-radius: 30px;
 }
 
-.product-game__three {
+.product-game3 {
   height: 512px;
   width: 378px;
   margin-bottom: 32px;
@@ -181,7 +188,45 @@ body {
   padding: 8px 16px 10px;
 }
 
+.product-game2__number {
+  padding-bottom: 16px;
+  background: #f7f7f7;
+  border-radius: 53px;
+  width: 76px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 8px 16px 10px;
+}
+
+.product-game3__number {
+  padding-bottom: 16px;
+  background: #f7f7f7;
+  border-radius: 53px;
+  width: 76px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 8px 16px 10px;
+}
+
 .product-game__subtitle {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+}
+
+.product-game2__subtitle {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+}
+
+.product-game3__subtitle {
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 700;
@@ -228,24 +273,46 @@ body {
   border-radius: 30px;
 }
 
-.mini-game__descripto {
+.mini-games__descripto {
   padding: 48px 48px 203px 48px;
 }
 
-.mini-game__subtitle {
+.mini-games__subtitle {
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
   line-height: 58.51px;
 }
 
-.mini-game__number {
+.mini-games__number {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   padding-top: 24px;
   padding-bottom: 36px;
+}
+
+.mini-games__button {
+  display: inline-block;
+  text-align: center;
+  padding-top: 16px;
+  box-sizing: border-box;
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background-color: #202027;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #202027;
+}
+
+.mini-games__button:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
 }
 
 .footer {
