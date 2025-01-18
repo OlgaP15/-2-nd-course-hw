@@ -88,6 +88,11 @@ body {
   letter-spacing: 0.04em;
 }
 
+.heder__img {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
 .about-games {
   background: #202027;
   padding-top: 94px;
