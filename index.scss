@@ -67,24 +67,36 @@ body {
 }
 .heder__scrolling {
     background: #BCEC30;
-    max-width: 100%; 
-    overflow: hidden;
-    white-space: nowrap; 
-    padding: 10px 0; 
 }
 .heder__scrolling-games {
     overflow: hidden; 
-    white-space: nowrap; 
-    padding: 10px 0; 
+    white-space: nowrap;  
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: 0.04em;
+    display: inline-block;
+    padding-left: 100%; 
+    animation: scrollText 25s linear infinite
 }
-.heder__img {
-    padding-top: 27px;
-    padding-bottom: 27px;
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.heder__imgs {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    margin-right: 51px;
+    margin-left: 51px;
 }
 
 .about-games {
@@ -159,6 +171,13 @@ body {
 .mini-games {
     background: #202027;
     padding-top: 46px;
+    background-image: url(img-gaim/star-8.svg), url(img-gaim/star-9.svg), url(img-gaim/star-10.svg), url(img-gaim/star-11.svg);
+    background-repeat: no-repeat;
+    background-position:
+        top 93px right 124px,
+        top 126px right 45px,
+        bottom 65px right 52px,
+        bottom 45px right 150px;
 }
 .mini-games__titles {
     font-size: 64px;
@@ -211,6 +230,7 @@ body {
     font-size: 24px;
     font-weight: 600;
     line-height: 29.26px;
-    padding: 61px 578px;
-    width: 285px;
+    padding-top: 61px;
+    padding-bottom: 60px;
+    padding-left:  495px;
 }
