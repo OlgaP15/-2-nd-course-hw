@@ -327,4 +327,11 @@ body {
   padding-top: 61px;
   padding-bottom: 60px;
   padding-left: 495px;
+}
+
+@media (max-width: 700px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */
