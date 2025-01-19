@@ -18,7 +18,9 @@
     }
     .heder__button {
         margin-left: 115px;
-
+    }
+    .about-games {
+        display: none;
     }
     .mini-games__titles {
         text-align: center;
@@ -27,13 +29,13 @@
     .mini-games__productes {
         max-width: 650px;    
     }
-    .mini-games__productes2 {
-        max-width: 650px;
-    }
     .mini-games__icons {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+    .footer-text {
+        text-align: center;
     }
     
 }

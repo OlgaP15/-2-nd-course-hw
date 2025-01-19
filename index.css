@@ -345,6 +345,9 @@ body {
   .heder__button {
     margin-left: 115px;
   }
+  .about-games {
+    display: none;
+  }
   .mini-games__titles {
     text-align: center;
     font-size: 50px;
@@ -352,13 +355,13 @@ body {
   .mini-games__productes {
     max-width: 650px;
   }
-  .mini-games__productes2 {
-    max-width: 650px;
-  }
   .mini-games__icons {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+  .footer-text {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -370,6 +373,12 @@ body {
     background-image: url(img-gaim/star-mob-big.svg), url(img-gaim/star-mob1.svg), url(img-gaim/star-mob2.svg), url(img-gaim/star-mob3.svg), url(img-gaim/star-mob4.svg);
     background-repeat: no-repeat;
     background-position: top 0px right 0px, top 64px left 91px, top 97px left 37px, bottom 74px right 86px, bottom 28px right 34px;
+  }
+  .heder__title {
+    padding-top: 147px;
+    padding-bottom: 131px;
+    margin-right: 40px;
+    text-align: center;
   }
   .heder__subtitle {
     font-size: 40px;
@@ -446,6 +455,9 @@ body {
   .mini-games__descripto {
     padding: 29px 29px 32.68px 29px;
   }
+  .mini-games__icons {
+    display: block;
+  }
   .mini-games__subtitle {
     font-family: Montserrat;
     font-size: 32px;
@@ -485,6 +497,6 @@ body {
     line-height: 19.5px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 93px;
+    padding-left: 0px;
   }
 }/*# sourceMappingURL=index.css.map */

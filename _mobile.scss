@@ -10,6 +10,13 @@
         background-position: top 0px right 0px, top 64px left 91px,
         top 97px left 37px, bottom 74px right 86px, bottom 28px right 34px;
     }
+    .heder__title {
+        padding-top: 147px;
+        padding-bottom: 131px;
+        margin-right: 40px;
+        text-align: center;
+    
+    }
     .heder__subtitle {
         font-size: 40px;
         font-weight: 700;
@@ -58,7 +65,6 @@
         padding-left: 0%;
         animation: scrollText 25s linear infinite;
     }
-
     .about-games {
         display: none;
     }
@@ -85,6 +91,9 @@
     }
     .mini-games__descripto {
         padding: 29px 29px 32.68px 29px;
+    }
+    .mini-games__icons {
+        display: block;
     }
     .mini-games__subtitle {
         font-family: Montserrat;
@@ -126,6 +135,6 @@
         line-height: 19.5px;
         padding-top: 40px;
         padding-bottom: 40px;
-        padding-left: 93px;
+        padding-left: 0px;
     }
 }
