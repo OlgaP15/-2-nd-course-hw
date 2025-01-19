@@ -324,6 +324,43 @@ body {
   padding-left: 495px;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .heder {
+    background-position: top 0px right 0px, top 44px left 81px, top 87px left 27px, bottom 64px right 106px, bottom 18px right 154px;
+  }
+  .heder__title {
+    padding-top: 86px;
+    padding-bottom: 0px;
+    margin-right: 80px;
+    text-align: center;
+  }
+  .heder__subtitles {
+    max-width: 660px;
+    text-align: center;
+  }
+  .heder__button {
+    margin-left: 115px;
+  }
+  .mini-games__titles {
+    text-align: center;
+    font-size: 50px;
+  }
+  .mini-games__productes {
+    max-width: 650px;
+  }
+  .mini-games__productes2 {
+    max-width: 650px;
+  }
+  .mini-games__icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 768px) {
   .center {
     padding-left: 16px;
@@ -335,7 +372,6 @@ body {
     background-position: top 0px right 0px, top 64px left 91px, top 97px left 37px, bottom 74px right 86px, bottom 28px right 34px;
   }
   .heder__subtitle {
-    font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
@@ -345,7 +381,6 @@ body {
             text-decoration-skip-ink: none;
   }
   .heder__subtitles {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
@@ -451,42 +486,5 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 93px;
-  }
-}
-@media (max-width: 1024px) {
-  .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
-  }
-  .heder {
-    background-position: top 0px right 0px, top 44px left 81px, top 87px left 27px, bottom 64px right 106px, bottom 18px right 154px;
-  }
-  .heder__title {
-    padding-top: 86px;
-    padding-bottom: 0px;
-    margin-right: 80px;
-    text-align: center;
-  }
-  .heder__subtitles {
-    max-width: 660px;
-    text-align: center;
-  }
-  .heder__button {
-    margin-left: 115px;
-  }
-  .mini-games__titles {
-    text-align: center;
-    font-size: 50px;
-  }
-  .mini-games__productes {
-    max-width: 650px;
-  }
-  .mini-games__productes2 {
-    max-width: 650px;
-  }
-  .mini-games__icons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=index.css.map */
