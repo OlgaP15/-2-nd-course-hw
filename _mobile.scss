@@ -1,7 +1,133 @@
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
     }
+    .heder {
+        background-image: url(img-gaim/star-mob-big.svg), url(img-gaim/star-mob1.svg),
+        url(img-gaim/star-mob2.svg), url(img-gaim/star-mob3.svg), url(img-gaim/star-mob4.svg);
+        background-repeat: no-repeat;
+        background-position: top 0px right 0px, top 64px left 91px,
+        top 97px left 37px, bottom 74px right 86px, bottom 28px right 34px;
+    }
+    .heder__subtitle {
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48.76px;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .heder__subtitles {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        margin-left: 23.5px;
+        padding-bottom: 36px;
 
+    }
+    .heder__button {
+        display: inline-block;
+        text-align: center;
+        padding-top: 16px;
+        box-sizing: border-box;
+        width: 285px;
+        height: 55px;
+        border-radius: 60px;
+        background-color: #202027;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid #202027;
+        margin-left: 29px;
+        margin-bottom: 131px;
+    }
+    .heder__button:hover {
+        display: none;
+    }
+    .scrolling-games {
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 17.6px;
+        letter-spacing: 0.04em;
+        display: inline-block;
+        padding-left: 0%;
+        animation: scrollText 25s linear infinite;
+    }
+
+    .about-games {
+        display: none;
+    }
+    .mini-games {
+        background-image: none;
+    }
+    .mini-games__titles {
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48.76px;
+        padding-bottom: 48px;
+    }
+    .mini-games__product {
+        padding-bottom: 49px;
+    }
+    .mini-games__productes {
+        flex-direction: column-reverse;
+        max-width: 3740px;
+        min-height: 375px;
+    }
+    .mini-games__productes2 {
+        flex-direction: column-reverse;
+    }
+    .mini-games__descripto {
+        padding: 29px 29px 32.68px 29px;
+    }
+    .mini-games__subtitle {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+    }
+    .mini-games__number {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        padding-top: 16px;
+    }
+    .mini-games__button {
+        display: inline-block;
+        text-align: center;
+        padding-top: 16px;
+        box-sizing: border-box;
+        width: 285px;
+        height: 55px;
+        border-radius: 60px;
+        background-color: #202027;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid #202027;
+        margin-bottom: 33px;
+    }
+    .mini-games__button:hover {
+        display: none;
+    }
+
+    .footer-text {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.5px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 93px;
+    }
 }
