@@ -9,50 +9,52 @@
         background-repeat: no-repeat;
         background-position: top 0px right 0px, top 64px left 91px,
         top 97px left 37px, bottom 74px right 86px, bottom 28px right 34px;
-    }
-    .heder__title {
-        padding-top: 147px;
-        padding-bottom: 131px;
-        margin-right: 40px;
-        text-align: center;
-    
-    }
-    .heder__subtitle {
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48.76px;
-        text-align: center;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-    }
-    .heder__subtitles {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19.5px;
-        margin-left: 23.5px;
-        padding-bottom: 36px;
 
+        &__title {
+            padding-top: 147px;
+            padding-bottom: 131px;
+            margin-right: 40px;
+            text-align: center;
+        
+        }
+        &__subtitle {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48.76px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        &__subtitles {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.5px;
+            margin-left: 23.5px;
+            padding-bottom: 36px;
+    
+        }
+        &__button {
+            display: inline-block;
+            text-align: center;
+            padding-top: 16px;
+            box-sizing: border-box;
+            width: 285px;
+            height: 55px;
+            border-radius: 60px;
+            background-color: #202027;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid #202027;
+            margin-left: 29px;
+            margin-bottom: 131px;
+        }
+        &__button:hover {
+            display: none;
+        }
     }
-    .heder__button {
-        display: inline-block;
-        text-align: center;
-        padding-top: 16px;
-        box-sizing: border-box;
-        width: 285px;
-        height: 55px;
-        border-radius: 60px;
-        background-color: #202027;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        border: 1px solid #202027;
-        margin-left: 29px;
-        margin-bottom: 131px;
-    }
-    .heder__button:hover {
-        display: none;
-    }
+   
     .scrolling-games {
         overflow: hidden;
         white-space: nowrap;
@@ -70,64 +72,65 @@
     }
     .mini-games {
         background-image: none;
-    }
-    .mini-games__titles {
-        font-family: Montserrat;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48.76px;
-        padding-bottom: 48px;
-    }
-    .mini-games__product {
-        padding-bottom: 49px;
-    }
-    .mini-games__productes {
-        flex-direction: column-reverse;
-        max-width: 3740px;
-        min-height: 375px;
-    }
-    .mini-games__productes2 {
-        flex-direction: column-reverse;
-    }
-    .mini-games__descripto {
-        padding: 29px 29px 32.68px 29px;
-    }
-    .mini-games__icons {
-        display: block;
-    }
-    .mini-games__subtitle {
-        font-family: Montserrat;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 39.01px;
-    }
-    .mini-games__number {
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19.5px;
-        padding-top: 16px;
-    }
-    .mini-games__button {
-        display: inline-block;
-        text-align: center;
-        padding-top: 16px;
-        box-sizing: border-box;
-        width: 285px;
-        height: 55px;
-        border-radius: 60px;
-        background-color: #202027;
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        border: 1px solid #202027;
-        margin-bottom: 33px;
-    }
-    .mini-games__button:hover {
-        display: none;
-    }
 
+        &__titles {
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48.76px;
+            padding-bottom: 48px;
+        }
+        &__product {
+            padding-bottom: 49px;
+        }
+        &__productes {
+            flex-direction: column-reverse;
+            max-width: 3740px;
+            min-height: 375px;
+        }
+        &__productes2 {
+            flex-direction: column-reverse;
+        }
+        &__descripto {
+            padding: 29px 29px 32.68px 29px;
+        }
+        &__icons {
+            display: block;
+        }
+        &__subtitle {
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39.01px;
+        }
+        &__number {
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.5px;
+            padding-top: 16px;
+        }
+        &__button {
+            display: inline-block;
+            text-align: center;
+            padding-top: 16px;
+            box-sizing: border-box;
+            width: 285px;
+            height: 55px;
+            border-radius: 60px;
+            background-color: #202027;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid #202027;
+            margin-bottom: 33px;
+        }
+        &__button:hover {
+            display: none;
+        }
+    }
+    
     .footer-text {
         font-family: Montserrat;
         font-size: 16px;
@@ -136,5 +139,6 @@
         padding-top: 40px;
         padding-bottom: 40px;
         padding-left: 0px;
+        text-align: center;
     }
 }

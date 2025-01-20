@@ -24,20 +24,17 @@ body {
   background-repeat: no-repeat;
   background-position: top 0px right 0px, top 69px left 156px, top 94px left 63px, top 538px left 948px, top 568px left 1013px;
 }
-
 .heder__title {
   padding-top: 196px;
   padding-bottom: 246px;
   max-height: 358px;
   max-width: 769px;
 }
-
 .heder__subtitle {
   font-size: 64px;
   font-weight: 700;
   line-height: 78.02px;
 }
-
 .heder__subtitles {
   font-family: Montserrat;
   font-size: 24px;
@@ -46,7 +43,6 @@ body {
   padding-bottom: 48px;
   padding-top: 24px;
 }
-
 .heder__button {
   display: inline-block;
   text-align: center;
@@ -62,7 +58,6 @@ body {
   cursor: pointer;
   border: 1px solid #202027;
 }
-
 .heder__button:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -71,6 +66,10 @@ body {
 
 .scrolling {
   background: #bcec30;
+}
+.scrolling__imgs {
+  margin-right: 51px;
+  margin-left: 51px;
 }
 
 .scrolling-games {
@@ -94,11 +93,6 @@ body {
     transform: translateX(-100%);
   }
 }
-.scrolling__imgs {
-  margin-right: 51px;
-  margin-left: 51px;
-}
-
 .about-games {
   background: #202027;
   padding-top: 94px;
@@ -106,7 +100,6 @@ body {
   background-repeat: no-repeat;
   background-position: top 98px right 0px, top 770px left 25px, top 822px left 40px;
 }
-
 .about-games__titles {
   font-size: 64px;
   font-weight: 700;
@@ -114,7 +107,6 @@ body {
   color: #ffffff;
   padding-bottom: 24px;
 }
-
 .about-games__description {
   font-size: 24px;
   font-weight: 400;
@@ -142,35 +134,9 @@ body {
   background: #ffffff;
   border-radius: 30px;
 }
-
 .product-game__descript {
   padding: 32px 32px 32px 36px;
 }
-
-.product-game2__descript {
-  padding: 32px 32px 32px 36px;
-}
-
-.product-game3__descript {
-  padding: 32px 32px 32px 36px;
-}
-
-.product-game2 {
-  height: 551px;
-  width: 378px;
-  margin-bottom: 32px;
-  background: #ffffff;
-  border-radius: 30px;
-}
-
-.product-game3 {
-  height: 512px;
-  width: 378px;
-  margin-bottom: 32px;
-  background: #ffffff;
-  border-radius: 30px;
-}
-
 .product-game__number {
   padding-bottom: 16px;
   background: #f7f7f7;
@@ -182,7 +148,23 @@ body {
   line-height: 18px;
   padding: 8px 16px 10px;
 }
+.product-game__subtitle {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+}
 
+.product-game2 {
+  height: 551px;
+  width: 378px;
+  margin-bottom: 32px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+.product-game2__descript {
+  padding: 32px 32px 32px 36px;
+}
 .product-game2__number {
   padding-bottom: 16px;
   background: #f7f7f7;
@@ -194,7 +176,23 @@ body {
   line-height: 18px;
   padding: 8px 16px 10px;
 }
+.product-game2__subtitle {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.01px;
+}
 
+.product-game3 {
+  height: 512px;
+  width: 378px;
+  margin-bottom: 32px;
+  background: #ffffff;
+  border-radius: 30px;
+}
+.product-game3__descript {
+  padding: 32px 32px 32px 36px;
+}
 .product-game3__number {
   padding-bottom: 16px;
   background: #f7f7f7;
@@ -206,21 +204,6 @@ body {
   line-height: 18px;
   padding: 8px 16px 10px;
 }
-
-.product-game__subtitle {
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39.01px;
-}
-
-.product-game2__subtitle {
-  font-family: Montserrat;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 39.01px;
-}
-
 .product-game3__subtitle {
   font-family: Montserrat;
   font-size: 32px;
@@ -235,7 +218,6 @@ body {
   background-repeat: no-repeat;
   background-position: top 93px right 124px, top 126px right 45px, bottom 65px right 52px, bottom 45px right 150px;
 }
-
 .mini-games__titles {
   font-size: 64px;
   font-weight: 700;
@@ -243,15 +225,12 @@ body {
   color: #ffffff;
   padding-bottom: 72px;
 }
-
 .mini-games__product {
   padding-bottom: 112px;
 }
-
 .mini-games__icons {
   margin-bottom: 32px;
 }
-
 .mini-games__productes {
   display: flex;
   flex-direction: row;
@@ -259,7 +238,6 @@ body {
   background-color: #ffffff;
   border-radius: 30px;
 }
-
 .mini-games__productes2 {
   display: flex;
   flex-direction: row-reverse;
@@ -267,18 +245,15 @@ body {
   background-color: #ffffff;
   border-radius: 30px;
 }
-
 .mini-games__descripto {
   padding: 48px 48px 203px 48px;
 }
-
 .mini-games__subtitle {
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
   line-height: 58.51px;
 }
-
 .mini-games__number {
   font-family: Montserrat;
   font-size: 24px;
@@ -287,7 +262,6 @@ body {
   padding-top: 24px;
   padding-bottom: 36px;
 }
-
 .mini-games__button {
   display: inline-block;
   text-align: center;
@@ -303,7 +277,6 @@ body {
   cursor: pointer;
   border: 1px solid #202027;
 }
-
 .mini-games__button:hover {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -324,7 +297,7 @@ body {
   padding-left: 495px;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
@@ -334,7 +307,7 @@ body {
   }
   .heder__title {
     padding-top: 86px;
-    padding-bottom: 0px;
+    padding-bottom: 130px;
     margin-right: 80px;
     text-align: center;
   }
@@ -498,5 +471,6 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 0px;
+    text-align: center;
   }
 }/*# sourceMappingURL=index.css.map */
