@@ -15,101 +15,111 @@ body {
     padding-right: calc(50% - 600px);
 }
 .heder {
-    background-color: #E1FF8F;
-    background-image: url(img-gaim/group-stars.svg), url(img-gaim/star-1.svg), url(img-gaim/star-2.svg), url(img-gaim/star-3.svg), url(img-gaim/star-4.svg);
+    background-color: #e1ff8f;
+    background-image: url(img-gaim/group-stars.svg), url(img-gaim/star-1.svg),
+    url(img-gaim/star-2.svg), url(img-gaim/star-3.svg), url(img-gaim/star-4.svg);
     background-repeat: no-repeat;
-    background-position:
-        top 0px right 0px,
-        top 69px left 156px,
-        top 94px left 63px,
-        top 538px left 948px,
-        top 568px left 1013px;       
+    background-position: top 0px right 0px, top 69px left 156px,
+    top 94px left 63px, top 538px left 948px, top 568px left 1013px;
+    
+    &__title {
+        padding-top: 196px;
+        padding-bottom: 246px;
+        max-height: 358px;
+        max-width: 769px;
+    }
+    &__subtitle {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78.02px;
+    }
+    &__subtitles {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 48px;
+        padding-top: 24px;
+    }
+    &__button {
+        display: inline-block;
+        text-align: center;
+        padding-top: 16px;
+        box-sizing: border-box;
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        background-color: #202027;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid #202027;
+    }
+    &__button:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
 }
 
-.heder__title {
-    padding-top: 196px;
-    padding-bottom: 246px;
-    max-height: 358px;
-    max-width: 769px;
+.scrolling {
+    background: #bcec30;
+    &__imgs {
+        margin-right: 51px;
+        margin-left: 51px;
+    }
 }
-.heder__subtitle {
-    font-family: Montserrat;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78.02px;
-}
-.heder__subtitles {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    padding-bottom: 48px;
-}
-.heder__button {
-    display: inline-block;
-    text-align: center;
-    padding-top: 16px;
-    box-sizing: border-box;
-    width: 247px;
-    height: 66px;
-    border-radius: 60px;
-    background-color: #202027;
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid #202027
-}
-.heder__button:hover {
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
-}
-.heder__scrolling {
-    background: #BCEC30;
-    max-width: 100%; 
+.scrolling-games {
     overflow: hidden;
-    white-space: nowrap; 
-    padding: 10px 0; 
-}
-.heder__scrolling-games {
-    overflow: hidden; 
-    white-space: nowrap; 
-    padding: 10px 0; 
+    white-space: nowrap;
     font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
     line-height: 33px;
     letter-spacing: 0.04em;
+    display: inline-block;
+    padding-left: 100%;
+    animation: scrollText 25s linear infinite;
 }
+
+@keyframes scrollText {
+    0% {
+    transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
+
 
 .about-games {
     background: #202027;
     padding-top: 94px;
-    background-image: url(img-gaim/star-7.svg), url(img-gaim/star-5.svg), url(img-gaim/star-6.svg);
+    background-image: url(img-gaim/star-7.svg), url(img-gaim/star-5.svg),
+    url(img-gaim/star-6.svg);
     background-repeat: no-repeat;
-    background-position:
-        top 98px right 0px,
-        top 770px left 25px,
-        top 822px left 40px;
-        
+    background-position: top 98px right 0px, top 770px left 25px,
+    top 822px left 40px;
+
+    &__titles {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78.02px;
+        color: #ffffff;
+        padding-bottom: 24px;
+    }
+    &__description {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #ffffff;
+        max-width: 788px;
+        padding-bottom: 72px;
+    }
 }
-.about-games__titles {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78.02px;
-    color: #ffffff;
-    padding-bottom: 24px;
-}
-.about-games__description {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    color: #ffffff;
-    max-width: 788px;
-    padding-bottom: 72px;
-}
-.about-gemes__product {
+
+.product {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
@@ -122,91 +132,193 @@ body {
     height: 473px;
     width: 378px;
     margin-bottom: 32px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 30px;
+    transition: all 1s;
+    
+    &__descript {
+        padding: 32px 32px 32px 36px;
+    }
+    &__number {
+        padding-bottom: 16px;
+        background: #f7f7f7;
+        border-radius: 53px;
+        width: 76px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 8px 16px 10px;
+    }
+    &__subtitle {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+    }
 }
-.product-game__descript {
-    padding: 32px 32px 32px 36px;
+.product-game:hover {
+    transform: scale(1.1);
 }
-.product-game__two {
+.product-game2 {
     height: 551px;
     width: 378px;
     margin-bottom: 32px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 30px;
+    transition: all 1s;
+
+    &__descript {
+        padding: 32px 32px 32px 36px;
+    }
+    &__number {
+        padding-bottom: 16px;
+        background: #f7f7f7;
+        border-radius: 53px;
+        width: 76px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 8px 16px 10px;
+    }
+    &__subtitle {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+    }
 }
-.product-game__three {
+.product-game2:hover {
+    transform: scale(1.1);
+}
+.product-game3 {
     height: 512px;
     width: 378px;
     margin-bottom: 32px;
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 30px;
+    transition: all 1s;
+
+    &__descript {
+        padding: 32px 32px 32px 36px;
+    }
+    &__number {
+        padding-bottom: 16px;
+        background: #f7f7f7;
+        border-radius: 53px;
+        width: 76px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        padding: 8px 16px 10px;
+    }
+    &__subtitle {
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39.01px;
+    } 
 }
-.product-game__number {
-    padding-bottom: 16px;
-}
-.product-game__subtitle {
-    font-family: Montserrat;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39.01px;
+.product-game3:hover {
+    transform: scale(1.1);
 }
 
 .mini-games {
     background: #202027;
     padding-top: 46px;
-}
-.mini-games__titles {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 78.02px;
-    color: #ffffff;
-    padding-bottom: 72px;
-}
-.mini-games__product {
-    padding-bottom: 112px;
-}
-.mini-games__icons {
-    margin-bottom: 32px;
-}
-.mini-games__productes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-}
-.mini-games__productes2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    border-radius: 30px;
-}
-.mini-game__descripto {
-    padding: 48px 48px 203px 48px;
-}
-.mini-game__subtitle {
-    font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58.51px;
-}
-.mini-game__number {
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
+    background-image: url(img-gaim/star-8.svg), url(img-gaim/star-9.svg),
+    url(img-gaim/star-10.svg), url(img-gaim/star-11.svg);
+    background-repeat: no-repeat;
+    background-position: top 93px right 124px, top 126px right 45px,
+    bottom 65px right 52px, bottom 45px right 150px;
+
+    &__titles {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78.02px;
+        color: #ffffff;
+        padding-bottom: 72px;
+    }
+    &__product {
+        padding-bottom: 112px;
+    }
+    &__icons {
+        margin-bottom: 32px;
+    }
+    &__productes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 30px;
+        transition: all 1s;
+    }
+    &__productes:hover {
+        transform: scale(1.1);
+    }
+    &__productes2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-radius: 30px;
+        transition: all 1s;
+    }
+    &__productes2:hover {
+        transform: scale(1.1);
+    }
+    &__descripto {
+        padding: 48px 48px 203px 48px;
+    }
+    &__subtitle {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58.51px;
+    }
+    &__number {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+    &__button {
+        display: inline-block;
+        text-align: center;
+        padding-top: 16px;
+        box-sizing: border-box;
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        background-color: #202027;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 1px solid #202027;
+    }
+    &__button:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
 }
 
 .footer {
-    background: #BCEC30;
+    background: #bcec30;
 }
-.footer-text {
+.footer__text {
     font-family: Montserrat;
     font-size: 24px;
     font-weight: 600;
     line-height: 29.26px;
-    padding: 61px 578px;
-    width: 285px;
+    padding-top: 61px;
+    padding-bottom: 60px;
+    padding-left: 495px;
 }
+@import 'tablet';
+@import 'mobile';
