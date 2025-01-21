@@ -133,6 +133,7 @@ body {
   margin-bottom: 32px;
   background: #ffffff;
   border-radius: 30px;
+  transition: all 1s;
 }
 .product-game__descript {
   padding: 32px 32px 32px 36px;
@@ -155,12 +156,17 @@ body {
   line-height: 39.01px;
 }
 
+.product-game:hover {
+  transform: scale(1.1);
+}
+
 .product-game2 {
   height: 551px;
   width: 378px;
   margin-bottom: 32px;
   background: #ffffff;
   border-radius: 30px;
+  transition: all 1s;
 }
 .product-game2__descript {
   padding: 32px 32px 32px 36px;
@@ -183,12 +189,17 @@ body {
   line-height: 39.01px;
 }
 
+.product-game2:hover {
+  transform: scale(1.1);
+}
+
 .product-game3 {
   height: 512px;
   width: 378px;
   margin-bottom: 32px;
   background: #ffffff;
   border-radius: 30px;
+  transition: all 1s;
 }
 .product-game3__descript {
   padding: 32px 32px 32px 36px;
@@ -209,6 +220,10 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 39.01px;
+}
+
+.product-game3:hover {
+  transform: scale(1.1);
 }
 
 .mini-games {
@@ -237,6 +252,10 @@ body {
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 30px;
+  transition: all 1s;
+}
+.mini-games__productes:hover {
+  transform: scale(1.1);
 }
 .mini-games__productes2 {
   display: flex;
@@ -244,6 +263,10 @@ body {
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 30px;
+  transition: all 1s;
+}
+.mini-games__productes2:hover {
+  transform: scale(1.1);
 }
 .mini-games__descripto {
   padding: 48px 48px 203px 48px;
