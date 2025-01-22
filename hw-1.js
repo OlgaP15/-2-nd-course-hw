@@ -1,5 +1,4 @@
 //Задание 1//
-let a = 10;
 alert(a);
 a = 20;
 alert(a);
@@ -82,4 +81,8 @@ alert("Результат деления на 2: " + dividedByTwo);
 let finalResult = dividedByTwo - number;
 alert("Результат после вычитания загаданного числа: " + finalResult);
 
+
 alert("Ответ равен 5!"); 
+=======
+alert("Ответ равен 5!"); */
+
