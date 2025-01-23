@@ -1,4 +1,4 @@
-//Задание 1 //
+//Задание 2.1//
 let password = 'пароль';
 let userInput = prompt("Введите пароль");
 
@@ -8,7 +8,7 @@ if (userInput === password) {
     alert("Пароль введен неправильно");
 }
 
-//Задание 2//
+//Задание 2.2//
 let i = 2;
 if (i > 0 && i <10) {
     console.log("Верно");
@@ -16,7 +16,7 @@ if (i > 0 && i <10) {
     console.log("Неверно");
 }
 
-//Задание 3//
+//Задание 2.3//
 let k = 120;
 let l = 50;
 
@@ -25,12 +25,13 @@ if (k > 100 || l > 100) {
 } else {
     console.log("Неверно");
 }
-//Задание 4//
+//Задание 2.4//
 let m = '2';
 let n = '3';
+
 alert(Number(m) + Number(n)); 
 
-//Задание 5//
+//Задание 2.5//
 let monthNumber = 12;
 if(monthNumber < 1 || monthNumber > 12) {
     console.log("Номер месяца должен быть от 1 до 12.");
@@ -59,19 +60,49 @@ if(monthNumber < 1 || monthNumber > 12) {
     }
 }
 
-//Доп.задание 1//
-let usertInput = prompt("Пожалуйста, введите любое число: ");
-let number = Number(usertInput);
-if (isNaN(number)) {
+//Доп.задание 2.1//
+let enterInput = prompt("Пожалуйста, введите любое число: ");
+let date = Number(enterInput);
+if (isNaN(date)) {
     alert("Вы ввели не число!");
 } else {
-    if (number % 2 === 0) {
+    if (date % 2 === 0) {
         alert("Число четное");
     } else {
         alert("Число нечетное");
     }
 }
 
-//Доп.задание 2//
+//Доп.задание 2.2//
+let clientOS = 0;
 
-//Доп.задание 3//
+if (clientOS === 0) {
+    console.log("Установите версию приложения для iOS по ссылке.");
+} else if (clientOS === 1) {
+    console.log("Установите версию приложения для Android по ссылке.");
+} else {
+    console.log("Неизвестная операционная система.");
+}
+
+//Доп.задание 2.3//
+let clientOB = 0;
+let clientDeviceYear = 2015;
+
+if (clientDeviceYear < 2015) {
+    if (clientOB ===0) {
+        console.log("Установите облегченную версию приложения для iOS по ссылке.");
+    } else if (clientOB ===1) {
+        console.log("Установите облегченную версию приложения для Android по ссылке.");
+    } else {
+        console.log("Неизвестная операционная система.");
+    }
+} else {
+    if (clientOB === 0) {
+        console.log("Установите облегченную версию приложения для iOS по ссылке.");
+    }else if (clientOB === 1) {
+        console.log("Установите облегченную версию приложения для Android по ссылке.");
+    } else {
+        console.log("Неизвестная операционная система.");
+    
+    }
+}

@@ -148,12 +148,14 @@ body {
   font-weight: 500;
   line-height: 18px;
   padding: 8px 16px 10px;
+  color: #202027;
 }
 .product-game__subtitle {
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.01px;
+  color: #202027;
 }
 
 .product-game:hover {
@@ -181,12 +183,14 @@ body {
   font-weight: 500;
   line-height: 18px;
   padding: 8px 16px 10px;
+  color: #202027;
 }
 .product-game2__subtitle {
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.01px;
+  color: #202027;
 }
 
 .product-game2:hover {
@@ -214,12 +218,14 @@ body {
   font-weight: 500;
   line-height: 18px;
   padding: 8px 16px 10px;
+  color: #202027;
 }
 .product-game3__subtitle {
   font-family: Montserrat;
   font-size: 32px;
   font-weight: 700;
   line-height: 39.01px;
+  color: #202027;
 }
 
 .product-game3:hover {
