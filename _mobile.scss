@@ -82,6 +82,10 @@
         &__product {
             padding-bottom: 49px;
         }
+    }
+    .games-icons {
+        display: block;
+
         &__productes {
             flex-direction: column-reverse;
             max-width: 3740px;
@@ -92,9 +96,6 @@
         }
         &__descripto {
             padding: 29px 29px 32.68px 29px;
-        }
-        &__icons {
-            display: block;
         }
         &__subtitle {
             font-family: Montserrat;
@@ -130,7 +131,7 @@
         }
     }
     
-    .footer-text {
+    .footer__text {
         font-family: Montserrat;
         font-size: 16px;
         font-weight: 600;
