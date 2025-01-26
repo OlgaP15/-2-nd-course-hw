@@ -82,4 +82,6 @@ alert("Результат деления на 2: " + dividedByTwo);
 let finalResult = dividedByTwo - number;
 alert("Результат после вычитания загаданного числа: " + finalResult);
 
+
 alert("Ответ равен 5!"); 
+
