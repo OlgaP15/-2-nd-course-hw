@@ -1,5 +1,5 @@
     //Задание 1
-for (let i = 0; i < 2; i++) {
+for (let z = 0; z < 2; z++) {
     console.log("Привет");
 }
 
@@ -34,7 +34,7 @@ console.log("Полученное число: ", n);
 console.log("Количество итераций: ", num);
 
     //Задание 6
-let (firstFriday = 5;)
+let (firstFriday = 5);
 for (let day = 1; day <= 31; day++) {
     if (day === firstFriday || (day - firstFriday) % 7 === 0) {
         console.log(`Сегодня пятница, ${day}-e число. Необходимо подготовить отчет.`);
