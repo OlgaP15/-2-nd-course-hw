@@ -1,5 +1,5 @@
     //Задание 3.1
-for (let z = 0; z <= 2; z++) {
+for (let z = 0; z < 2; z++) {
     console.log("Привет");
 }
 
