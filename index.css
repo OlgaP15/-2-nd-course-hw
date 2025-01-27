@@ -66,6 +66,7 @@ body {
 
 .scrolling {
   background: #bcec30;
+  overflow-x: hidden;
 }
 .scrolling__imgs {
   margin-right: 51px;
@@ -376,41 +377,32 @@ body {
   .heder__title {
     padding-top: 147px;
     padding-bottom: 131px;
-    margin-right: 40px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .heder__subtitle {
     font-size: 40px;
     font-weight: 700;
     line-height: 48.76px;
     text-align: center;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
   }
   .heder__subtitles {
     font-size: 16px;
     font-weight: 400;
     line-height: 19.5px;
-    margin-left: 23.5px;
     padding-bottom: 36px;
+    padding-left: 21.5px;
+    padding-right: 21.5px;
   }
   .heder__button {
-    display: inline-block;
-    text-align: center;
-    padding-top: 16px;
-    box-sizing: border-box;
     width: 285px;
     height: 55px;
-    border-radius: 60px;
-    background-color: #202027;
-    color: #ffffff;
     font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border: 1px solid #202027;
-    margin-left: 29px;
     margin-bottom: 131px;
+    display: flex;
+    justify-content: center;
   }
   .heder__button:hover {
     display: none;
@@ -426,6 +418,14 @@ body {
     display: inline-block;
     padding-left: 0%;
     animation: scrollText 25s linear infinite;
+  }
+  .scrolling__imgs {
+    margin-right: 27.4px;
+    margin-left: 27.4px;
+  }
+  .scrolling__img {
+    width: 19.34px;
+    height: 19.34px;
   }
   .about-games {
     display: none;
