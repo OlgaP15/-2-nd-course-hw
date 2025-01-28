@@ -65,6 +65,8 @@ body {
 
 .scrolling {
     background: #bcec30;
+    overflow-x: hidden;
+    
     &__imgs {
         margin-right: 51px;
         margin-left: 51px;
