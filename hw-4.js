@@ -62,4 +62,27 @@ function startGuessNumberGame() {
         }
     }
 }
+          //Задание 4.1
+function findMinNumber(ab, ac) {
+    return ab <= ac ? ab : ac;
+}
+console.log(findMinNumber(4, 8));
+console.log(findMinNumber(6, 6));
+
+          //Задание 4.2
+function checkEvenOrOdd(number) {
+    return number % 2 === 0 ? 'Число четное' : 'Число нечетное';
+}
+console.log(checkEvenOrOdd(11));
+console.log(checkEvenOrOdd(14));
+
+          //Задание 4.3
+
+          //Задание 4.4
+
+          //Задание 4.5
+
+          //Задание 4.6
+
+          //Задание 4.7
 
