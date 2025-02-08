@@ -45,7 +45,7 @@ console.log(resultArr1);
 
 //Задание 5.7
 const arr2 = [9, 8, 7, 6, 5];
-const guessNumber1 = prompt("Угадай число из массива:");
+const guessNumber1 = +prompt("Угадай число из массива:");
 if (guessNumber1 !== null) {
     const guessNumber = Number(guessNumber1);
     if (arr.includes(guessNumber)) {
