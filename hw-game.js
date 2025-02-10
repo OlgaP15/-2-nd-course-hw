@@ -10,8 +10,8 @@ playButtons.forEach(button => {
             case 'simple-arithmetic':
                 startSimpleArithmeticGame(); 
                 break;
-            case 'turn-over':
-                alert("Игра 'Перевертыши' пока недоступна!"); 
+            case 'turn-text-over':
+                startTurnTextOverGame(); 
                 break;
             case 'quiz':
                 alert("Игра 'Викторина' пока недоступна!"); 
@@ -98,7 +98,6 @@ function startSimpleArithmeticGame() {
         }
     }
 }
-
 function generateTask() {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
@@ -106,4 +105,38 @@ function generateTask() {
     const operator = operators[Math.floor(Math.random() * operators.length)];
     return `${num1} ${operator} ${num2}`;
 }
+function startTurnTextOverGame() {
+    alert("Запускаем игру 'Переверни текст'!");
+    alert("Попробуйте ввести текст, который будет перевернут.");
 
+    while (true) {
+        const userText = prompt("Введите любой текст:");
+
+        if (userText === null) {
+            alert("Игра завершена. До свидания!");
+            break;
+        }
+
+        const trimmedText = userText.trim();
+
+        if (trimmedText === "") {
+            alert("Пожалуйста, введите текст!");
+            continue;
+        }
+
+        if (!/[a-zA-Zа-яА-Я]/.test(trimmedText)) {
+            alert("Пожалуйста, введите текст, содержащий буквы!");
+            continue;
+        }
+
+        const flippedText = trimmedText.split("").reverse().join("").toLowerCase();
+
+        alert(`Перевернутый текст: ${flippedText}`);
+
+        const playAgain = confirm("Хотите перевернуть ещё один текст?");
+        if (!playAgain) {
+            alert("Игра окончена. Спасибо за игру!");
+            break;
+        }
+    }
+}
