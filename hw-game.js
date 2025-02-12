@@ -10,11 +10,11 @@ playButtons.forEach(button => {
             case 'simple-arithmetic':
                 startSimpleArithmeticGame(); 
                 break;
-            case 'turn-over':
-                alert("Игра 'Перевертыши' пока недоступна!"); 
+            case 'turn-text-over':
+                startTurnTextOverGame(); 
                 break;
             case 'quiz':
-                alert("Игра 'Викторина' пока недоступна!"); 
+                startQuizGame(); 
                 break;
             case 'rock-paper-scissors':
                 alert("Игра 'Камень-ножницы-бумага' пока недоступна!"); 
@@ -98,7 +98,6 @@ function startSimpleArithmeticGame() {
         }
     }
 }
-
 function generateTask() {
     const num1 = Math.floor(Math.random() * 10) + 1;
     const num2 = Math.floor(Math.random() * 10) + 1;
@@ -106,4 +105,80 @@ function generateTask() {
     const operator = operators[Math.floor(Math.random() * operators.length)];
     return `${num1} ${operator} ${num2}`;
 }
+function startTurnTextOverGame() {
+    alert("Запускаем игру 'Переверни текст'!");
+    alert("Попробуйте ввести текст, который будет перевернут.");
+
+    while (true) {
+        const userText = prompt("Введите любой текст:");
+
+        if (userText === null) {
+            alert("Игра завершена. До свидания!");
+            break;
+        }
+
+        const trimmedText = userText.trim();
+
+        if (trimmedText === "") {
+            alert("Пожалуйста, введите текст!");
+            continue;
+        }
+
+        if (!/[a-zA-Zа-яА-Я]/.test(trimmedText)) {
+            alert("Пожалуйста, введите текст, содержащий буквы!");
+            continue;
+        }
+
+        const flippedText = trimmedText.split("").reverse().join("").toLowerCase();
+
+        alert(`Перевернутый текст: ${flippedText}`);
+
+        const playAgain = confirm("Хотите перевернуть ещё один текст?");
+        if (!playAgain) {
+            alert("Игра окончена. Спасибо за игру!");
+            break;
+        }
+    }
+}
+const quiz = [
+    {
+        question: "Полосабый большой кот, только в Джунглях он живет. Младший брат царя зверей, отгадай его скорей?",
+        options: ["1. Лиса", "2. Тигр", "3. Кот"],
+        correctAnswer: 2 
+    },
+    {
+        question: "Я нужна всем безусловно: Нарисую домик ровно, точки две соеденю и длину вам назову?",
+        options: ["1. Циркуль", "2. Линейка", "3. Ножницы"],
+        correctAnswer: 2
+    },
+    {
+        question: "Какая птица носит название фрукта?",
+        options: ["1. Галка", "2. Сойка", "3. Киви"],
+        correctAnswer: 3
+    }
+];
+function startQuizGame() {
+    alert("Добро пожаловать в игру 'Викторина'!");
+    alert("Ответе на вопросы викторины с вариантами ответов.");
+    let correctAnswers = 0; 
+
+    quiz.forEach((question, index) => {
+        const questionText = `Вопрос ${index + 1}: ${question.question}\n${question.options.join("\n")}`;
+
+        const userAnswer = prompt(questionText);
+
+        if (userAnswer !== null && parseInt(userAnswer) === question.correctAnswer) {
+            alert("Правильно! Молодец!");
+            correctAnswers++; 
+        } else if (userAnswer === null) {
+            alert("Игра завершена.");
+            return; 
+        } else {
+            alert(`Неправильно! Правильный ответ: ${question.correctAnswer}`);
+        }
+    });
+
+    alert(`Викторина завершена! Правильных ответов: ${correctAnswers} из ${quiz.length}`);
+}
+
 
