@@ -17,7 +17,7 @@ playButtons.forEach(button => {
                 startQuizGame(); 
                 break;
             case 'rock-paper-scissors':
-                alert("Игра 'Камень-ножницы-бумага' пока недоступна!"); 
+                startRockPaperScissors(); 
                 break;
             case 'random-color-generator':
                 alert("Игра 'Генератор случайных цветов' пока недоступна!"); 
@@ -180,5 +180,52 @@ function startQuizGame() {
 
     alert(`Викторина завершена! Правильных ответов: ${correctAnswers} из ${quiz.length}`);
 }
+function startRockPaperScissors() {
+    alert("Запускаем игру 'Камень, ножницы, бумага'!");
+    alert("В этой игре Ваша задача сыграть с компьютером. Введите текст на выбор: камень, ножницы или бумага.");
+
+    const choices = ["камень", "ножницы", "бумага"];
+
+    while (true) {
+        const userChoice = prompt("Введите ваш выбор (камень, ножницы, бумага):");
+
+        if (userChoice === null) {
+            alert("Игра завершена. До свидания!");
+            break;
+        }
+
+        const userChoiceLower = userChoice.toLowerCase().trim();
+
+        if (!choices.includes(userChoiceLower)) {
+            alert("Пожалуйста, введите корректный выбор: камень, ножницы или бумага!");
+            continue;
+        }
+
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+        alert(`Компьютер выбрал: ${computerChoice}`);
+
+        let result;
+        if (userChoiceLower === computerChoice) {
+            result = "Ничья!";
+        } else if (
+            (userChoiceLower === "камень" && computerChoice === "ножницы") ||
+            (userChoiceLower === "ножницы" && computerChoice === "бумага") ||
+            (userChoiceLower === "бумага" && computerChoice === "камень")
+        ) {
+            result = "Вы победили!";
+        } else {
+            result = "Вы проиграли!";
+        }
+
+        alert(`Ваш выбор: ${userChoiceLower}\nВыбор компьютера: ${computerChoice}\nРезультат: ${result}`);
+
+        const playAgain = confirm("Хотите сыграть ещё раз?");
+        if (!playAgain) {
+            alert("Игра окончена. Спасибо за игру!");
+            break;
+        }
+    }
+}
+
 
 
