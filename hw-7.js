@@ -24,7 +24,7 @@ function filter(array, ruleFunction) {
             result.push(array[i]); 
         }
     }
-    return result; в
+    return result; 
 }
 
 console.log(filter([3, -4, 1, 9], isPositive)); 
