@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework No. 9</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Домашняя работа №9</h1>
+    <button class="btn">Показать</button>
+
+    <p class="title-color">Меняес цвет текста на синий</p>
+    <button class="button">Меняем цвет</button>
+    <h2 id="title">Меняем текст заголовка</h2>
+    <button class="btn-change">Меняем текст</button>
+
+    <p class="description">Привет</p>
+    <p class="description">Проверте</p>
+    <p class="description">Работу</p>
+
+    <p class="description-text">Улыбнитесь</p>
+    <p class="description-change">Текст</p>
+    <p class="description-text">Вас снимает</p>
+    <p class="description-change">Текст</p>
+    <p class="description-text">Скрытая камера</p>
+
+    <button id="addButton">Добавить элемент</button>
+
+    <button id="removeButton">Удалить элемент</button>
+    <script>
+        //Задание 1
+        const titleEl = document.querySelector('.title');
+        const btnEl = document.querySelector('.btn');
+
+        console.log(titleEl);
+        console.log(btnEl);
+
+        btnEl.addEventListener('click', btnClick);
+        function btnClick() {
+            console.log(titleEl.classList);
+            titleEl.classList.toggle('hidden');
+            if (titleEl.classList.contains('hidden')) {
+                btnEl.textContent = 'Показать';
+            } else {
+                btnEl.textContent = 'Скрыть';
+            }
+        }
+        
+        //Задание 2
+        const titleColorEl = document.querySelector('.title-color');
+        const buttonEl = document.querySelector('.button');
+
+        buttonEl.addEventListener('click', () => {
+            titleColorEl.style.color = 'blue';
+        })
+        
+        //Задание 3
+        const element = document.getElementById('title'); 
+        const btnChangeEl = document.querySelector('.btn-change');
+        btnChangeEl.addEventListener('click', () => { 
+            element.textContent = 'Привет, мир!';  
+        })
+        
+        //Задание 4
+        const descriptionEl = document.querySelectorAll('.description');
+        console.log(descriptionEl);
+        descriptionEl.forEach(element => {
+            element.textContent = 'Измененный текст';
+        });
+
+        //Задание 5
+        const descriptionTextEl = document.querySelectorAll('.description-text');
+        const descriptionChangeEl = document.querySelectorAll('.description-change');
+        console.log(descriptionTextEl);
+        console.log(descriptionChangeEl);
+        descriptionChangeEl.forEach(element => {
+            element.textContent = 'Новый текст';
+        });
+        descriptionTextEl.forEach(element => {
+            element.style.color = 'red';
+        })
+
+        //Задание 6
+        const addButtonEl = document.getElementById('addButton');
+        addButtonEl.addEventListener('click', () => { 
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph); 
+        })
+
+        //Задание 7
+        const removeButtonEl = document.getElementById('removeButton');
+        const descriptionElm = document.querySelector('.description');
+        console.log(descriptionElm);
+        removeButtonEl.addEventListener('click', () => {
+            if (descriptionElm) {
+            descriptionElm.remove();
+            } else {
+            console.log('Элемент не найден.');
+            }
+        })
+    </script>
+</body>
+</html>
