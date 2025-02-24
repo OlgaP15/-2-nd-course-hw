@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
@@ -74,16 +78,17 @@ body {
 }
 
 .scrolling-games {
-  overflow: hidden;
+  display: flex;
+  align-items: center;
   white-space: nowrap;
-  font-family: Montserrat;
-  font-size: 30px;
+  font-size: 29.5px;
   font-weight: 700;
   line-height: 33px;
   letter-spacing: 0.04em;
-  display: inline-block;
-  padding-left: 100%;
-  animation: scrollText 25s linear infinite;
+  animation: scrollText 15s linear infinite;
+  margin-top: 27px;
+  margin-bottom: 30px;
+  max-height: 36px;
 }
 
 @keyframes scrollText {
@@ -311,6 +316,46 @@ body {
   transition: 0.5s;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#changeColorButton, #stopGameButton {
+  padding: 25px 50px;
+  font-size: 40px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#changeColorButton {
+  background-color: #007BFF;
+}
+
+#stopGameButton {
+  background-color: #ff4444;
+}
+
 .footer {
   background: #bcec30;
 }
@@ -335,15 +380,11 @@ body {
   .heder__title {
     padding-top: 86px;
     padding-bottom: 130px;
-    margin-right: 80px;
     text-align: center;
   }
   .heder__subtitles {
     max-width: 660px;
     text-align: center;
-  }
-  .heder__button {
-    margin-left: 115px;
   }
   .about-games {
     display: none;
@@ -359,6 +400,9 @@ body {
   }
   .games-icons__productes {
     max-width: 650px;
+  }
+  .games-icons__img {
+    max-height: 250px;
   }
   .footer-text {
     text-align: center;
@@ -408,16 +452,17 @@ body {
     display: none;
   }
   .scrolling-games {
-    overflow: hidden;
+    display: flex;
+    align-items: center;
     white-space: nowrap;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
     line-height: 17.6px;
     letter-spacing: 0.04em;
-    display: inline-block;
-    padding-left: 0%;
-    animation: scrollText 25s linear infinite;
+    animation: scrollText 10s linear infinite;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   .scrolling__imgs {
     margin-right: 27.4px;
