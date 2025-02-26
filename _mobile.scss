@@ -45,16 +45,17 @@
         }
     }  
     .scrolling-games {
-        overflow: hidden;
+        display: flex;
+        align-items: center;
         white-space: nowrap;
         font-family: Montserrat;
         font-size: 16px;
         font-weight: 700;
         line-height: 17.6px;
         letter-spacing: 0.04em;
-        display: inline-block;
-        padding-left: 0%;
-        animation: scrollText 25s linear infinite;
+        animation: scrollText 10s linear infinite;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
     .scrolling__imgs {
         margin-right: 27.4px;
